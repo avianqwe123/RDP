@@ -1,7 +1,7 @@
 #! /bin/bash
-printf "Installing RDP Be Patience... \n" >&2
+read -p "Enter Username For RDP: " BSED
+printf "\n Installing RDP Be Patience... \n" >&2
 {
-read -p "\nEnter Username For RDP: " BSED
 sudo useradd -m $BSED
 sudo adduser $BSED sudo
 echo '$BSED:8426' | sudo chpasswd
